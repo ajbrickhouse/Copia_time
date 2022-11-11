@@ -1,0 +1,17 @@
+{
+"manifest_version": 3,
+    "name": "Copia Commit Time",
+    "description": "replace days since commit with timestamp and offset time to MST",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://app.copia.io/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
